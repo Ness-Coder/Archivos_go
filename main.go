@@ -9,7 +9,7 @@ import (
 func archivo(cadena []string){
 	file1, err1 := os.Create("ascendente.txt")
 	if err1 !=nil{
-		fmt.Printf("error")
+		fmt.Printf("Daño en archivo / no se encuentra el archivo")
 		return
 	}
 
@@ -22,7 +22,7 @@ func archivo(cadena []string){
 
 	file2, err2 := os.Create("descendente.txt")
 	if err2 !=nil{
-		fmt.Printf("error")
+		fmt.Printf("Daño en archivo / no se encuentra el archivo ")
 		return
 	}
 
@@ -39,7 +39,7 @@ func main(){
 	var n int
 	sliceCadena := []string{}
 	
-	fmt.Printf("Ingrese n: ")
+	fmt.Printf("Ingrese el numero de cadenas: ")
 	fmt.Scan(&n)
 	for i := 0; i < n; i++{
 		
